@@ -33,7 +33,7 @@ Cart.prototype.getItemToCart = function () {
     var appendId = '#' + this.id;
 
     $.get({
-        url: './js/cart.json',
+        url: 'https://raw.githubusercontent.com/guzikov/JSONforGB/master/cart.json',
         dataType: 'json',
         context: this,
         success: function (data) {
@@ -141,16 +141,6 @@ Cart.prototype.remove = function (itemId, title, price, quantity) {
     $('.cart-item').remove(':contains("' + title + '")');
 
 
-    // for (var prodKey in this.cartItems){
-    //     var good = new Good(
-    //         this.cartItems[prodKey].id_item,
-    //         this.cartItems[prodKey].title,
-    //         this.cartItems[prodKey].price,
-    //         this.cartItems[prodKey].quantity
-    //     );
-    //     good.renderToCart($('#cart-block'));
-    //
-    // }
     console.log(this.cartItems);
     this.refresh();
 

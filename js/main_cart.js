@@ -4,7 +4,7 @@ $(document).ready (function () {
 
 
         $.get({
-            url: './js/cart.json',
+            url: 'https://raw.githubusercontent.com/guzikov/JSONforGB/master/cart.json',
             dataType: 'json',
             context: this,
             success: function (data) {
