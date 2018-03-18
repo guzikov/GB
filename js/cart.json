@@ -1,0 +1,24 @@
+{
+  "result": 1,
+  "cart":[
+    {
+      "id_item": 100,
+      "title": "Зажим",
+      "price": 1000,
+      "quantity": 1
+    },
+    {
+      "id_item": 101,
+      "title": "Оптический кабель",
+      "price": 2000,
+      "quantity": 1
+    },
+    {
+      "id_item": 102,
+      "title": "Эндоскоп",
+      "price": 3000,
+      "quantity": 1
+    }
+  ],
+  "amount": 6000
+}
