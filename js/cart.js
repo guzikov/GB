@@ -48,8 +48,8 @@ Cart.prototype.getItemToCart = function () {
 
             $('#cartQuantity').text(this.cartQuantity + ' товаров в корзине');
 
-            $cartData.append('<p> Общая сумма:&nbsp;&nbsp;' + this.cartAmount + '&#8381;' + '</p>');
-            $cartData.append('<p> Всего товаров:&nbsp;&nbsp;' + this.cartQuantity + '</p>');
+            $cartData.append('<p> Общая сумма: &nbsp;&nbsp;' + this.cartAmount + '&#8381;' + '</p>');
+            $cartData.append('<p> Всего товаров: &nbsp;&nbsp;' + this.cartQuantity + '</p>');
             $cartData.appendTo(appendId);
 
             for (var itemKey in data.cart){
