@@ -15,12 +15,12 @@ Cart.prototype.constructor = Cart;
 Cart.prototype.render = function (root) {
 
     var $cartDiv = $('<div />', {
-        id: this.id,
-        text: 'ИТОГО',
-        class: 'result'
+        id: this.id
     });
 
+    var $h4 = $('<h4> ИТОГО </h4>');
 
+    $h4.appendTo($cartDiv);
     $cartDiv.appendTo(root);
 };
 
@@ -40,7 +40,7 @@ Cart.prototype.getItemToCart = function () {
 
             var $cartData = $('<div />', {
                 id: 'cart_data',
-                class: 'cart-item'
+                class: 'result'
             });
 
             this.cartQuantity = data.cart.length;
@@ -48,8 +48,8 @@ Cart.prototype.getItemToCart = function () {
 
             $('#cartQuantity').text(this.cartQuantity + ' товаров в корзине');
 
-            $cartData.append('<p> Общая сумма:' + this.cartAmount + '</p>');
-            $cartData.append('<p> Всего товаров:' + this.cartQuantity + '</p>');
+            $cartData.append('<p> Общая сумма:&nbsp;&nbsp;' + this.cartAmount + '&#8381;' + '</p>');
+            $cartData.append('<p> Всего товаров:&nbsp;&nbsp;' + this.cartQuantity + '</p>');
             $cartData.appendTo(appendId);
 
             for (var itemKey in data.cart){
