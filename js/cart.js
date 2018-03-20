@@ -60,19 +60,19 @@ Cart.prototype.getItemToCart = function () {
     })
 };
 
-// Cart.prototype.addItem = function (itemId, price, quantity) {
-//     var cartItem = {
-//         "id_item": itemId,
-//         "price": price,
-//         "quantity": quantity
-//     };
-//
-//     this.cartQuantity++;
-//     this.cartAmount += price;
-//     this.cartItems.push(cartItem);
-//
-//     this.refresh();
-// };
+Cart.prototype.addItem = function (itemId, price, quantity) {
+    var cartItem = {
+        "id_item": itemId,
+        "price": price,
+        "quantity": quantity
+    };
+
+    this.cartQuantity++;
+    this.cartAmount += price;
+    this.cartItems.push(cartItem);
+
+    this.refresh();
+};
 
 Cart.prototype.changeCartData = function (itemId, price, quantity) {
     var cartItem = {
