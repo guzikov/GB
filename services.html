@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вертекс Магазин - Корзина</title>
+    <title>Вертекс Услуги</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="themify-icons.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/Container.js"></script>
     <script src="js/goods.js"></script>
     <script src="js/cart.js"></script>
-    <script src="js/main_cart.js"></script>
+    <script src="js/main_products.js"></script>
 
 </head>
 <body>
@@ -25,7 +25,7 @@
                     <div class="top-bar container-box">
                         <span>Call now:   1-888-777-55555</span>
                         <span>Opening Time:   Mon–Fri 08:00–18:00   Sat–Sun 10:00–17:00</span>
-                        <a href="" class="ti-shopping-cart"><span id="cartQuantity"></span></a>
+                        <a href="cart.html" class="ti-shopping-cart"><span id="cartQuantity"></span></a>
                     </div>
                 </div>
                 <div class="page-navigation">
@@ -39,9 +39,9 @@
                         <ul class="navigation__menu">
                             <li><a href="index.html">Главная</a> </li>
                             <li><a href="about.html">О нас</a> </li>
-                            <li><a href="services.html">Сервис</a> </li>
+                            <li><a href="#" class="navigation__menu_active">Сервис</a> </li>
                             <li><a href="">Новости</a> </li>
-                            <li><a href="shop.html" class="navigation__menu_active">Магазин</a> </li>
+                            <li><a href="shop.html">Магазин</a> </li>
                             <li><a href="contacts.html">Контакты</a> </li>
                         </ul>
                     </nav>
@@ -75,18 +75,75 @@
         <div class="breadcrumb-block container-box">
             <ul class="breadcrumb">
                 <li class="breadcrumb_item"><a href="index.html">Главная&nbsp;&nbsp;</a></li>
-                <li class="breadcrumb_item passive"><a href="shop.html">&nbsp;&nbsp;Магазин&nbsp;&nbsp;</a></li>
-                <li class="breadcrumb_item active">&nbsp;&nbsp;Корзина</li>
+                <li class="breadcrumb_item active">&nbsp;&nbsp;Услуги</li>
             </ul>
 
+            <ul class="goodsList">
+                <li><a href="">Все услуги</a></li>
+                <li><a href="">Диагностика</a></li>
+                <li><a href="">Ремонт</a></li>
+                <li><a href="">ТО</a></li>
+            </ul>
         </div>
 
-        <!--SHOP MAIN-->
+        <!--SERVICES-->
 
-        <div class="cart container-box" id="cart-block">
-
+        <div class="selectService container-box">
+            <div class="item">
+                <a href=""><img class="service-img" src="img/gal6.png" alt="Ремонт"></a>
+                <h3>LCD repair / replacement</h3>
+                <p>Aliquam lacinia elit vel sapien cursus scelerisque a non neque. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna.</p>
+                <a href="">read more</a>
+            </div>
+            <div class="item">
+                <a href=""><img class="service-img" src="img/gal6.png" alt="Ремонт"></a>
+                <h3>Battery charging / replacement</h3>
+                <p>Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna.</p>
+                <a href="">read more</a>
+            </div>
+            <div class="item">
+                <a href=""><img class="service-img" src="img/gal6.png" alt="Ремонт"></a>
+                <h3>Unlocking</h3>
+                <p>Aliquam lacinia elit vel sapien cursus scelerisque a non neque. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna.</p>
+                <a href="">read more</a>
+            </div>
+            <div class="item">
+                <a href=""><img class="service-img" src="img/gal6.png" alt="Ремонт"></a>
+                <h3>Unlocking</h3>
+                <p>Aliquam lacinia elit vel sapien cursus scelerisque a non neque. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna.</p>
+                <a href="">read more</a>
+            </div>
+            <div class="item">
+                <a href=""><img class="service-img" src="img/gal6.png" alt="Ремонт"></a>
+                <h3>Unlocking</h3>
+                <p>Aliquam lacinia elit vel sapien cursus scelerisque a non neque. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna.</p>
+                <a href="">read more</a>
+            </div>
+            <div class="item">
+                <a href=""><img class="service-img" src="img/gal6.png" alt="Ремонт"></a>
+                <h3>Unlocking</h3>
+                <p>Aliquam lacinia elit vel sapien cursus scelerisque a non neque. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna.</p>
+                <a href="">read more</a>
+            </div>
+            <div class="item">
+                <a href=""><img class="service-img" src="img/gal6.png" alt="Ремонт"></a>
+                <h3>Unlocking</h3>
+                <p>Aliquam lacinia elit vel sapien cursus scelerisque a non neque. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna.</p>
+                <a href="">read more</a>
+            </div>
+            <div class="item">
+                <a href=""><img class="service-img" src="img/gal6.png" alt="Ремонт"></a>
+                <h3>Unlocking</h3>
+                <p>Aliquam lacinia elit vel sapien cursus scelerisque a non neque. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna.</p>
+                <a href="">read more</a>
+            </div>
+            <div class="item">
+                <a href=""><img class="service-img" src="img/gal6.png" alt="Ремонт"></a>
+                <h3>Unlocking</h3>
+                <p>Aliquam lacinia elit vel sapien cursus scelerisque a non neque. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna. Aenean euismod placerat leo. Sed ut scelerisque libero. Cras vel nunc nec dolor dictum euismod quis quis magna.</p>
+                <a href="">read more</a>
+            </div>
         </div>
-
 
 
 
@@ -116,7 +173,7 @@
                 <ul class="footer-links__menu">
                     <li><a href="index.html">Главная</a> </li>
                     <li><a href="about.html">О нас</a> </li>
-                    <li><a href="services.html">Сервис</a> </li>
+                    <li><a href="#">Сервис</a> </li>
                     <li><a href="">Новости</a> </li>
                     <li><a href="shop.html">Магазин</a> </li>
                     <li><a href="contacts.html">Контакты</a> </li>

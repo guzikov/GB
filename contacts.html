@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вертекс Магазин - Корзина</title>
+    <title>Вертекс Магазин</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="themify-icons.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/Container.js"></script>
     <script src="js/goods.js"></script>
     <script src="js/cart.js"></script>
-    <script src="js/main_cart.js"></script>
+    <script src="js/main_products.js"></script>
 
 </head>
 <body>
@@ -25,7 +25,7 @@
                     <div class="top-bar container-box">
                         <span>Call now:   1-888-777-55555</span>
                         <span>Opening Time:   Mon–Fri 08:00–18:00   Sat–Sun 10:00–17:00</span>
-                        <a href="" class="ti-shopping-cart"><span id="cartQuantity"></span></a>
+                        <a href="cart.html" class="ti-shopping-cart"><span id="cartQuantity"></span></a>
                     </div>
                 </div>
                 <div class="page-navigation">
@@ -41,8 +41,8 @@
                             <li><a href="about.html">О нас</a> </li>
                             <li><a href="services.html">Сервис</a> </li>
                             <li><a href="">Новости</a> </li>
-                            <li><a href="shop.html" class="navigation__menu_active">Магазин</a> </li>
-                            <li><a href="contacts.html">Контакты</a> </li>
+                            <li><a href="shop.html">Магазин</a> </li>
+                            <li><a href="#" class="navigation__menu_active">Контакты</a> </li>
                         </ul>
                     </nav>
 
@@ -70,34 +70,49 @@
             </div>
         </div>
 
-        <!--BREADCRUMBS-->
+        <!--CONTACTS-->
 
-        <div class="breadcrumb-block container-box">
-            <ul class="breadcrumb">
-                <li class="breadcrumb_item"><a href="index.html">Главная&nbsp;&nbsp;</a></li>
-                <li class="breadcrumb_item passive"><a href="shop.html">&nbsp;&nbsp;Магазин&nbsp;&nbsp;</a></li>
-                <li class="breadcrumb_item active">&nbsp;&nbsp;Корзина</li>
-            </ul>
+        <div class="contacts-block">
+            <div class="contacts-line__text container-box">
+                <div class="contacts">
+                    <span class="ti-location-pin"></span>
+                    <span>Санкт-Петербург, Михаила Дудина 3</span>
+                </div>
+                <div class="contacts">
+                    <span class="ti-mobile"></span>
+                    <span>+7-921-449-88-40</span>
+                </div>
+                <div class="contacts">
+                    <span class="ti-email"></span>
+                    <span>vertexmedical@yandex.ru</span>
+                </div>
 
+            </div>
         </div>
 
-        <!--SHOP MAIN-->
+        <!--SEND message FORM-->
 
-        <div class="cart container-box" id="cart-block">
+        <form id="sendForm" class="sendForm container-box">
+            <input title="Company" type="text" id="inputCompany" placeholder="Название организации">
+            <input title="City" type="text" id="inputCity" placeholder="Город">
+            <input title="Address" type="text" id="inputAddress" placeholder="Адрес">
+            <input title="Name" type="text" id="inputName" placeholder="ФИО">
+            <input title="Position" type="text" id="inputPosition" placeholder="Должность">
+            <input title="Phone Number" type="tel" id="inputPhoneNumber" placeholder="Телефон">
+            <input title="E-mail" type="email" id="inputEmail" placeholder="Email">
+            <input title="Message" type="text" id="inputMessage" placeholder="Как мы можем помочь?">
+            <input type="submit" id="submitBtn">
 
-        </div>
 
+        </form>
 
 
 
     </main>
 
     <footer>
-        <div class="getCalc-line">
-            <div class="container-box getCalc_flex">
-                <span>Хотите подарить вторую жизнь Вашему эндоскопу?</span>
-                <a href="" class="getCalc">Провести диагностику &gt;</a>
-            </div>
+        <div class="map-line">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CBahR0hwpC" frameborder="0"></iframe>
         </div>
 
         <div class="footer-links-background ">
